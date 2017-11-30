@@ -6,6 +6,14 @@ This is a RESTful API built with the Jooby micro-framework and uses the embedded
 1.0.0
 
 ### Usage
+These fields are available for query
+
+* id
+* title
+* isbn
+* author
+
+The database is empty, you can populate it using Postman, RestEasy or any other suitable tool
 
 
 ### Installation
