@@ -1,0 +1,3 @@
+org\jooby\books\Book.class
+org\jooby\books\App.class
+org\jooby\books\BookRepository.class
