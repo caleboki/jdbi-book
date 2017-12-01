@@ -33,7 +33,7 @@ public class App extends Jooby {
 
     use ("*", new CorsHandler());
 
-    /** Pet API. */
+    /** Book API. */
     use("/api/books")
         /** List pets. */
         .get(req -> {
@@ -43,7 +43,7 @@ public class App extends Jooby {
             return books;
           });
         })
-        /** Get a pet by ID. */
+        /** Get a book by ID. */
         .get("/:id", req -> {
           return require(DBI.class).inTransaction((handle, status) -> {
             int id = req.param("id").intValue();
